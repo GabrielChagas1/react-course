@@ -1,5 +1,7 @@
 import React from 'react'
 
+const ChangeMessageState = ({handleMessage}) => {
+
     function handleKeyUp(event) {
         const valorDoCampo = event.target.value;
         handleMessage(valorDoCampo);
@@ -10,3 +12,6 @@ import React from 'react'
         <input className="name" type="text" onKeyUp={handleKeyUp} />
     </>
   )
+}
+
+export default ChangeMessageState
