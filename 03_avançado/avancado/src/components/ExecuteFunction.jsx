@@ -6,3 +6,4 @@ const ExecuteFunction = ({myFunction}) => {
   )
 }
 
+export default ExecuteFunction
