@@ -6,3 +6,9 @@ import { useState } from 'react'
       {id: 3, name: 'Gabriel', age: 31}
     ])
 
+    const deleteRandom = () => {
+      const randomNumber = Math.floor(Math.random() * 4);
+      setUsers((prevUsers) => {
+        return prevUsers.filter((user) => randomNumber !== user.id)
+      })
+    }
