@@ -1,4 +1,5 @@
 import { useState } from 'react'
+const ListRender = () => {
 
     const [users, setUsers] = useState([
       {id: 1, name: 'Gabriel', age: 31},
@@ -12,3 +13,18 @@ import { useState } from 'react'
         return prevUsers.filter((user) => randomNumber !== user.id)
       })
     }
+
+  return (
+   <>
+     <ul>
+        {
+           users.map((item, i) => (
+                <li key={i}>Id{item.id} - {item.name}</li>
+           ))
+        }
+    </ul>
+    <button onClick={deleteRandom}>Delete Random User</button>
+   
+   </>
+  )
+}
