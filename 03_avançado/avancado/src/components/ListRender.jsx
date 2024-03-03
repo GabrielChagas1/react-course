@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 const ListRender = () => {
 
     const [users, setUsers] = useState([
@@ -28,3 +29,5 @@ const ListRender = () => {
    </>
   )
 }
+
+export default ListRender
