@@ -6,3 +6,5 @@ import ShowUserName from './showUserName';
     function handleGetNumber(){
       setNumber(document.getElementsByClassName('name')[0].value)
     }
+
+    const [number, setNumber] = useState('teste');
