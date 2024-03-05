@@ -8,3 +8,11 @@ import ShowUserName from './showUserName';
     }
 
     const [number, setNumber] = useState('teste');
+
+  return (
+    <div>
+        <p>Valor: {number}</p>
+        <input className="name" type="text" onKeyUp={handleGetNumber} />
+        <ShowUserName name={number} />
+    </div>
+  )
