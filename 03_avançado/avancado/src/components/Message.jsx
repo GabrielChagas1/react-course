@@ -5,3 +5,5 @@ const Message = ({msg}) => {
    <div>A mensagem é: {msg}</div>
   )
 }
+
+export default Message
