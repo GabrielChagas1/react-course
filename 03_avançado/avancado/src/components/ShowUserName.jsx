@@ -6,3 +6,4 @@ const ShowUserName = (props) => {
   )
 }
 
+export default ShowUserName
