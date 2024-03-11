@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import UserDetails from './components/UserDetails'
+
+function App() {
   const [users, setUsers] = useState([
     {
       id: 1,
@@ -53,3 +55,5 @@ import UserDetails from './components/UserDetails'
     </>
   )
 }
+
+export default App
