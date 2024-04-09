@@ -26,3 +26,23 @@ import CarDetails from './Components/CarDetails'
       available: true
     }
   ])
+
+  console.log(cars)
+
+  return (
+    <>
+      <h2>Listagem de carros 🚘</h2>
+
+        <div className='container'>
+          {
+            cars.map((item) => (
+              <>
+                <CarDetails name={item.name} color={item.color} value={item.value} available={item.available} key={item.id} />
+              </>
+            ))
+          }
+        </div>
+    </>
+  )
+}
+
