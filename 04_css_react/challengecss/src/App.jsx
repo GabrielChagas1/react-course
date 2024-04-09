@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import CarDetails from './Components/CarDetails'
+
+function App() {
   const [cars, setCar] = useState([
     {
       id: 1,
@@ -46,3 +48,4 @@ import CarDetails from './Components/CarDetails'
   )
 }
 
+export default App
