@@ -4,3 +4,9 @@
     text-align: left;
 }
 
+input,
+textarea,
+select {
+    display: block;
+    margin-top: 10px;
+}
