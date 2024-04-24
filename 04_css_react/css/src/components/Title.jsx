@@ -5,3 +5,5 @@ const Title = () => {
     <div className={styles.my_title}>Title</div>
   )
 }
+
+export default Title
