@@ -1,4 +1,10 @@
 {
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 }
