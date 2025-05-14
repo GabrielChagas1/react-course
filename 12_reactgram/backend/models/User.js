@@ -8,3 +8,5 @@ const userSchema = new Schema({
   profileImage: String,
   bio: String
 },{timestamps: true})
+
+const User = mongoose.model("User", userSchema)
