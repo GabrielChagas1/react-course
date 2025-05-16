@@ -7,3 +7,5 @@ const jwtSecret = process.env.JWT_SECRET
 
   // check if header has a token
   if(!token) return res.status(401).json({errors: ["Acesso Negado"]})
+
+    const verified = jwt.verify(token, jwtSecret)
