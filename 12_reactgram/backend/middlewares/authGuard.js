@@ -4,3 +4,6 @@ const jwtSecret = process.env.JWT_SECRET
 
   const authHeader = req.headers["authorization"]
   const token = authHeader && authHeader.split(" ")[1]
+
+  // check if header has a token
+  if(!token) return res.status(401).json({errors: ["Acesso Negado"]})
