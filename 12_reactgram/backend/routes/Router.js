@@ -8,3 +8,8 @@ router.use("/api/photos", require("./PhotoRoutes"))
 router.get("/", (req, res) => {
   res.send("API WORKING")
 })
+
+
+
+
+module.exports = router
