@@ -12,3 +12,5 @@ const validate = (req, res, next) => {
     errors: extractedErros,
   })
 }
+
+module.exports = validate
