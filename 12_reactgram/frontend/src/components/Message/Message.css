@@ -1,0 +1,9 @@
+.message {
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
