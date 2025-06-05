@@ -8,3 +8,5 @@ import {BsSearch, BsHouseDoorFill, BsFillPersonFill, BsFillCameraFill} from "rea
 import { useState } from "react";
 import { useAuth } from "../../hooks/useAuth";
 import { useDispatch, useSelector } from "react-redux";
+
+import { logout, reset } from "../../slices/authSlice";
