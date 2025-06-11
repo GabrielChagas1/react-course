@@ -10,3 +10,5 @@ import { useAuth } from "../../hooks/useAuth";
 import { useDispatch, useSelector } from "react-redux";
 
 import { logout, reset } from "../../slices/authSlice";
+
+  const { auth } = useAuth();
