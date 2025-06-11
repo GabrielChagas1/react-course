@@ -12,3 +12,4 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout, reset } from "../../slices/authSlice";
 
   const { auth } = useAuth();
+  const { user } = useSelector((state) => state.auth)
