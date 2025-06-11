@@ -15,3 +15,5 @@ import { logout, reset } from "../../slices/authSlice";
   const { user } = useSelector((state) => state.auth)
 
   const navigate = useNavigate();
+
+  const dispatch = useDispatch();
