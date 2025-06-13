@@ -17,3 +17,10 @@ import { logout, reset } from "../../slices/authSlice";
   const navigate = useNavigate();
 
   const dispatch = useDispatch();
+
+  const handleLogout = () => {
+    dispatch(logout())
+    dispatch(reset())
+
+    navigate("/login")
+  }
