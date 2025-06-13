@@ -11,6 +11,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { logout, reset } from "../../slices/authSlice";
 
+const Navbar = () => {
+
   const { auth } = useAuth();
   const { user } = useSelector((state) => state.auth)
 
@@ -24,6 +26,7 @@ import { logout, reset } from "../../slices/authSlice";
 
     navigate("/login")
   }
+
 
   return ( 
     <nav id="nav">
@@ -70,3 +73,5 @@ import { logout, reset } from "../../slices/authSlice";
     </nav>
    );
 }
+ 
+export default Navbar;
