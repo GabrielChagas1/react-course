@@ -4,3 +4,7 @@
   text-align: center;
   margin-top: 2em;
 }
+
+#photo img {
+  width: 100%;
+}
