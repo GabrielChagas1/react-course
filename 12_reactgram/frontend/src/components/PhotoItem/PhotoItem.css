@@ -5,3 +5,7 @@
 #home .photo-item h2{
   margin-bottom: .2em;
 }
+
+.photo-author {
+  text-align: left;
+}
