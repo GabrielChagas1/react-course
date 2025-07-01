@@ -9,3 +9,7 @@
 .photo-author {
   text-align: left;
 }
+
+.photo-author a {
+  font-weight: bold;
+}
