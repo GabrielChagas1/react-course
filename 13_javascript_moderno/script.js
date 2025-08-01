@@ -30,3 +30,9 @@ function LogName(){
 const name = 'Maysa'
 LogName()
 console.log(name)
+
+
+// 2 - arrow function
+const sum = function sum(a, b) {
+  return a + b
+}
