@@ -179,3 +179,21 @@ const tenis = new Product('Tênis Gazzelle', 800)
 console.log(tenis.name, tenis.productWithDiscount(10), tenis.productWithDiscount(12), tenis.productWithDiscount(50))
 
 
+// 9 - Herança
+class ProductWithAttributes extends Product {
+  constructor(name, price, colors){
+    super(name, price)
+    this.colors = colors
+  }
+
+  showColors(){
+    console.log("As cores são: ")
+    this.colors.forEach((color) => {
+      console.log(color)
+    })
+  }
+}
+
+const hat = new ProductWithAttributes('Boné', 30, ["Preto", "Azul", "Verde"])
+console.log(hat.name, hat.productWithDiscount(30))
+hat.showColors();
