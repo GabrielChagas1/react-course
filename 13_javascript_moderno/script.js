@@ -135,3 +135,27 @@ const {name: productName, price} = produtosDetalhes;
 
 console.log(`O nome do produto é ${productName}, custa R$${price}`)
 
+// 7 - Spread Operator
+const a1 = [1, 2, 3]
+const a2 = [4, 5, 6]
+
+const a3 = [...a1, ...a2]
+console.log(a3)
+
+const a4 = [0, ...a1, 4]
+console.log(a4)
+
+const carName = [{ name: 'Gol'}, {name: 'Honda City'}]
+const carBrand = { brand: 'VW'}
+const otherInfos = { km: 10000, price: 49000 }
+//const car = {...carName, ...carBrand, ...otherInfos}
+
+const cars = carName.map((x) => {
+  return {name: x.name, ...carBrand, ...otherInfos}
+})
+
+const car = {name: carName.map(c => c.name), ...carBrand, ...otherInfos}
+
+
+console.log(cars, car)
+
