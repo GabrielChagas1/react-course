@@ -159,3 +159,23 @@ const car = {name: carName.map(c => c.name), ...carBrand, ...otherInfos}
 
 console.log(cars, car)
 
+
+// 8 - Classes
+class Product {
+  constructor(name, price) {
+    this.name = name,
+    this.price = price
+  }
+
+  productWithDiscount(discount) {
+    return this.price * ((100 - discount)/ 100)
+  }
+}
+
+const shirt = new Product('Camisa Gola V', 20)
+console.log(shirt.name, shirt.productWithDiscount(10), shirt.productWithDiscount(12), shirt.productWithDiscount(50))
+
+const tenis = new Product('Tênis Gazzelle', 800)
+console.log(tenis.name, tenis.productWithDiscount(10), tenis.productWithDiscount(12), tenis.productWithDiscount(50))
+
+
