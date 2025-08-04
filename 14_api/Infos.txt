@@ -1,0 +1,35 @@
+api é um acrônimo para interface de programação de aplicações
+
+geralmente as respostas são em json
+
+api não possui ligação com o front
+
+baseada em requisição e resposta
+
+/REST e RESTful
+
+REST => Transferência Representacional de Estado
+
+* estilo de arquitetura que define como as apis devem ser criadas
+
+* respostas uniformes, sem ligação de estado, cache de respostas e outros
+
+// SPA
+
+* SPA => Single Page Application
+
+* toda a aplicação já é carregada de uma vez, não recarrega a tela, só atualiza o dom
+
+* é um framework front js como react, vue e angular
+
+* a arquitetura antiga utilizada é conhecida como monolith (monolito)
+
+//HTTP
+
+* andam de mãos dadas com as APIs, e fazem parte do REST
+* GET, POST, PUT, DELETE, PATCH E ETC
+* cada um desses é uma ação, e são essenciais
+
+//Status
+
+ajudam no desenvolvimento, exibindo mensagens de erro ou sucesso. precisamos definir um número de status HTTP
